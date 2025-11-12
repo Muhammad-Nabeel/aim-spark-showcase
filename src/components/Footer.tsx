@@ -71,8 +71,8 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/10 pt-8 text-center text-sm opacity-90">
-          <p className="flex items-center justify-center gap-2">
-            © {currentYear} AIM DIGITAL UK LIMITED. Made with <Heart className="w-4 h-4 text-red-500 fill-current" /> using React & TypeScript
+          <p className="flex items-center justify-center gap-2 flex-wrap">
+            © {currentYear} Muhammad Nabeel | AIM DIGITAL UK LIMITED. Made with <Heart className="w-4 h-4 text-red-500 fill-current" /> using React & TypeScript
           </p>
         </div>
       </div>

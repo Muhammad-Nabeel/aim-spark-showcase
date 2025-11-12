@@ -26,14 +26,19 @@ const Hero = () => {
             Available for freelance projects
           </div>
 
-          {/* Main heading */}
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
+          {/* Name */}
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-2">
+            Muhammad Nabeel
+          </h1>
+
+          {/* Title */}
+          <p className="text-2xl md:text-4xl font-semibold mb-4">
             <span className="bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent">
               MERN Stack Engineer
             </span>
-          </h1>
+          </p>
 
-          {/* Subheading */}
+          {/* Company */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Founder of <span className="font-semibold text-foreground">AIM DIGITAL UK LIMITED</span>
           </p>
