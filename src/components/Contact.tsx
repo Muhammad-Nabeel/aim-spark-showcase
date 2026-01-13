@@ -91,7 +91,7 @@ const Contact = () => {
 
         <Card className="bg-gradient-to-br from-primary via-primary to-accent text-white border-0 shadow-2xl">
           <CardContent className="p-8 md:p-12 text-center">
-            <h3 className="text-3xl font-bold mb-4">AIM DIGITAL UK LIMITED</h3>
+            <h3 className="text-3xl font-bold mb-4">MUHAMMAD NABEEL</h3>
             <p className="text-lg mb-8 opacity-90">
               Let's build something amazing together. Whether you need a
               full-stack application, consulting, or technical leadership, I'm
