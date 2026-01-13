@@ -116,16 +116,6 @@ const Projects = () => {
       githubUrl: "#",
       featured: false,
     },
-    {
-      title: "Booking System",
-      description:
-        "Appointment scheduling and booking platform with calendar integration, email notifications, and payment processing.",
-      tech: ["React", "Node.js", "PostgreSQL", "Express", "Nodemailer"],
-      image: "📅",
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false,
-    },
   ];
 
   return (
