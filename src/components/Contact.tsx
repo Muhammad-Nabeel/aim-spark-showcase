@@ -61,7 +61,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-2">Location</h3>
-                  <p className="text-muted-foreground">Lahore, Pakistan</p>
+                  <p className="text-muted-foreground">Kuala Lampur, Malaysia</p>
                 </div>
               </div>
             </CardContent>

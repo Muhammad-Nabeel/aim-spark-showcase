@@ -207,7 +207,7 @@ const Projects = () => {
           </p>
           <Button variant="outline" size="lg" asChild>
             <a
-              href="https://github.com"
+              href="https://github.com/Muhammad-Nabeel"
               target="_blank"
               rel="noopener noreferrer"
             >
