@@ -7,46 +7,50 @@ const Skills = () => {
       title: "Frontend",
       color: "primary",
       skills: [
-        "React.js", "Next.js", "TypeScript", "JavaScript (ES6+)",
-        "HTML5", "CSS3", "Tailwind CSS", "Redux", "React Query",
-        "Vite", "Webpack", "Responsive Design"
-      ]
+        "React.js",
+        "React Router",
+        "React Hooks",
+        "React DOM",
+        "JavaScript (ES6+)",
+        "HTML5",
+        "CSS3",
+        "TypeScript",
+      ],
     },
     {
       title: "Backend",
       color: "accent",
       skills: [
-        "Node.js", "Express.js", "REST APIs", "GraphQL",
-        "JWT Authentication", "Socket.io", "Microservices",
-        "API Design", "WebSockets"
-      ]
+        "Node.js",
+        "Nest.js",
+        "Express.js",
+        "RESTful APIs",
+        "C# / .NET",
+        "API Integration",
+        "Microservices",
+      ],
     },
     {
       title: "Database",
       color: "secondary",
-      skills: [
-        "MongoDB", "MySQL", "PostgreSQL", "Redis",
-        "Mongoose", "Prisma", "Database Design",
-        "Query Optimization"
-      ]
+      skills: ["SQL Server", "SQL", "MongoDB", "Database Design"],
     },
     {
       title: "DevOps & Tools",
       color: "primary",
-      skills: [
-        "Git & GitHub", "Docker", "AWS", "Azure", "CI/CD",
-        "Linux", "Nginx", "PM2", "Jenkins", "GitHub Actions"
-      ]
+      skills: ["Git", "GitHub", "Object-Oriented Programming", "API Design"],
     },
     {
       title: "Other",
       color: "accent",
       skills: [
-        "Agile/Scrum", "Testing (Jest, Cypress)", "SEO",
-        "Performance Optimization", "Security Best Practices",
-        "Technical Documentation", "Code Review"
-      ]
-    }
+        "Third-party API Integration",
+        "CRM Systems",
+        "WhatsApp Integration",
+        "Real-time Applications",
+        "E-commerce Platforms",
+      ],
+    },
   ];
 
   const getColorClasses = (color: string) => {
@@ -66,7 +70,9 @@ const Skills = () => {
     <section id="skills" className="py-20 px-6 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Technical Skills</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            Technical Skills
+          </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             A comprehensive toolkit for building modern web applications
           </p>
@@ -74,7 +80,7 @@ const Skills = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category) => (
-            <Card 
+            <Card
               key={category.title}
               className="border-2 hover:border-primary/50 transition-all duration-300 shadow-md hover:shadow-xl"
             >
@@ -84,10 +90,12 @@ const Skills = () => {
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill) => (
-                    <Badge 
+                    <Badge
                       key={skill}
                       variant="outline"
-                      className={`${getColorClasses(category.color)} transition-all duration-200 cursor-default`}
+                      className={`${getColorClasses(
+                        category.color
+                      )} transition-all duration-200 cursor-default`}
                     >
                       {skill}
                     </Badge>
@@ -102,8 +110,9 @@ const Skills = () => {
           <Card className="bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 border-2">
             <CardContent className="p-8">
               <p className="text-lg text-muted-foreground">
-                Always learning and staying updated with the latest technologies and best practices 
-                in the ever-evolving world of web development.
+                Always learning and staying updated with the latest technologies
+                and best practices in the ever-evolving world of web
+                development.
               </p>
             </CardContent>
           </Card>

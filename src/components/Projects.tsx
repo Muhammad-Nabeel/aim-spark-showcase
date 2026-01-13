@@ -1,4 +1,10 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
@@ -6,77 +12,141 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with real-time inventory management, payment processing, and admin dashboard. Built with MERN stack and integrated with Stripe for payments.",
-      tech: ["React", "Node.js", "MongoDB", "Express", "Stripe", "Redux"],
+      title: "JANSPORTS E-commerce Website",
+      description:
+        "Developed responsive e-commerce platforms with streamlined navigation and mobile-friendly features. Boosted online sales by 35% through enhanced user experience.",
+      tech: ["Shopify", "Liquid", "SCSS", "CSS", "JQuery"],
       image: "🛒",
-      liveUrl: "#",
+      liveUrl: "https://www.jansport.com/",
       githubUrl: "#",
-      featured: true
+      featured: true,
     },
     {
-      title: "Real-Time Chat Application",
-      description: "Scalable chat platform with WebSocket connections, message encryption, file sharing, and group chat features. Supports thousands of concurrent users.",
-      tech: ["React", "Socket.io", "Node.js", "MongoDB", "Redis"],
-      image: "💬",
-      liveUrl: "#",
+      title: "Babolat E-commerce Website",
+      description:
+        "Developed responsive e-commerce platforms with streamlined navigation and responsive design.",
+      tech: ["Shopify", "Liquid", "SCSS", "CSS", "JQuery"],
+      image: "🛒",
+      liveUrl: "https://www.babolat.com/",
       githubUrl: "#",
-      featured: true
+      featured: true,
     },
     {
-      title: "Task Management System",
-      description: "Collaborative project management tool with Kanban boards, real-time updates, time tracking, and team collaboration features.",
-      tech: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "TailwindCSS"],
-      image: "📋",
-      liveUrl: "#",
+      title: "Samirandaly.com E-commerce Website",
+      description:
+        "Developed responsive e-commerce platforms with streamlined navigation and responsive design.",
+      tech: ["Shopify", "Liquid", "SCSS", "CSS", "JQuery"],
+      image: "🛒",
+      liveUrl: "https://samirandaly.com/",
       githubUrl: "#",
-      featured: false
+      featured: true,
     },
     {
-      title: "Analytics Dashboard",
-      description: "Business intelligence dashboard with interactive charts, real-time data visualization, and customizable reports for data-driven decision making.",
-      tech: ["React", "D3.js", "Node.js", "Express", "MongoDB"],
-      image: "📊",
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
+      title: "Faremkers React App",
+      description:
+        "Real-time information app for current location, nearby bus stops, and routes. Includes admin panel for centralized management of route mapping and schedules.",
+      tech: [
+        "React.js",
+        "jsx",
+        "CSS3",
+        "Bootstrap",
+        "Material UI",
+        "Ant Design",
+        "InfoBip SMS API",
+        "Sabre Search & Booking API",
+        "Webhooks",
+        "Infobip Whatsapp API",
+        "Zong Icoming Call API",
+      ],
+      image: "📱",
+      liveUrl: "https://www.faremakers.com/",
+      githubUrl: "https://github.com/TravelChannel/Faremakers-React.git",
+      featured: true,
     },
     {
-      title: "Social Media Platform",
-      description: "Modern social networking application with posts, likes, comments, followers system, and real-time notifications.",
-      tech: ["React", "Node.js", "MongoDB", "Socket.io", "AWS S3"],
+      title: "Faremakers NEST.JS Backend",
+      description:
+        "Fully functional website with responsive design and user-friendly interface. Includes automated lead generation from Facebook and Google Ads.",
+      tech: [
+        "Node.js",
+        "NEST.js",
+        "InfoBip SMS API",
+        "Sabre Search & Booking API",
+        "Webhooks",
+        "Infobip Whatsapp API",
+        "Zong Icoming Call API",
+      ],
       image: "🌐",
+      liveUrl: "https://api.faremakers.com/",
+      githubUrl: "https://github.com/TravelChannel/Faremakers-Backend.git",
+      featured: true,
+    },
+    {
+      title: "Faremakers CRM",
+      description:
+        "Customer relationship management system for efficient customer data handling and management. Built using ADO.NET for robust database operations.",
+      tech: ["ADO.NET", "C#", ".NET", "Database Management"],
+      image: "💼",
+      liveUrl: "https://fmcrm.azurewebsites.net",
+      githubUrl: "https://github.com/TravelChannel/TravelChannel-CRM.git",
+      featured: false,
+    },
+    {
+      title: "Vizrt Graphics Control System",
+      description:
+        ".NET-based system for managing Vizrt graphics and rendering engines in production control room. Includes text replacement automation and command-based triggers.",
+      tech: [".NET", "C#", "Vizrt Integration", "Real-time Processing"],
+      image: "🎥",
       liveUrl: "#",
       githubUrl: "#",
-      featured: false
+      featured: false,
+    },
+    {
+      title: "Amadeus API Integration",
+      description:
+        "Back-end integration with Amadeus Enterprise API for real-time flight bookings and ticket issuance. Streamlined booking flow with enhanced transaction security.",
+      tech: [
+        "Nest.js",
+        "API Integration",
+        "Real-time Booking",
+        "Payment Processing",
+      ],
+      image: "✈️",
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false,
     },
     {
       title: "Booking System",
-      description: "Appointment scheduling and booking platform with calendar integration, email notifications, and payment processing.",
+      description:
+        "Appointment scheduling and booking platform with calendar integration, email notifications, and payment processing.",
       tech: ["React", "Node.js", "PostgreSQL", "Express", "Nodemailer"],
       image: "📅",
       liveUrl: "#",
       githubUrl: "#",
-      featured: false
-    }
+      featured: false,
+    },
   ];
 
   return (
     <section id="projects" className="py-20 px-6 bg-background">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Featured Projects</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            Featured Projects
+          </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A selection of recent work showcasing my expertise in full-stack development
+            A selection of recent work showcasing my expertise in full-stack
+            development
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Card 
+            <Card
               key={index}
               className={`group border-2 hover:border-primary transition-all duration-300 shadow-lg hover:shadow-2xl ${
-                project.featured ? 'md:col-span-2' : ''
+                project.featured ? "md:col-span-2" : ""
               }`}
             >
               <CardHeader>
@@ -109,19 +179,27 @@ const Projects = () => {
                     ))}
                   </div>
                   <div className="flex gap-3 pt-2">
-                    <Button 
-                      variant="default" 
+                    <Button
+                      variant="default"
                       size="sm"
                       className="bg-gradient-to-r from-primary to-accent hover:opacity-90 text-white"
                       asChild
                     >
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <ExternalLink className="w-4 h-4 mr-2" />
                         Live Demo
                       </a>
                     </Button>
                     <Button variant="outline" size="sm" asChild>
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Github className="w-4 h-4 mr-2" />
                         Source Code
                       </a>
@@ -138,7 +216,11 @@ const Projects = () => {
             Want to see more of my work?
           </p>
           <Button variant="outline" size="lg" asChild>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Github className="w-5 h-5 mr-2" />
               View All Projects on GitHub
             </a>

@@ -9,7 +9,8 @@ const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind or want to collaborate? I'd love to hear from you!
+            Have a project in mind or want to collaborate? I'd love to hear from
+            you!
           </p>
         </div>
 
@@ -22,11 +23,11 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-2">Email</h3>
-                  <a 
-                    href="mailto:contact@aimdigital.co.uk"
+                  <a
+                    href="mailto:nabeelfarooq7000@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    contact@aimdigital.co.uk
+                    nabeelfarooq7000@gmail.com
                   </a>
                 </div>
               </div>
@@ -41,11 +42,11 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-2">Phone</h3>
-                  <a 
-                    href="tel:+44000000000"
+                  <a
+                    href="tel:+923238864614"
                     className="text-muted-foreground hover:text-accent transition-colors"
                   >
-                    +44 (0) 000 000 000
+                    +92 323 8864614
                   </a>
                 </div>
               </div>
@@ -60,9 +61,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-2">Location</h3>
-                  <p className="text-muted-foreground">
-                    United Kingdom
-                  </p>
+                  <p className="text-muted-foreground">Lahore, Pakistan</p>
                 </div>
               </div>
             </CardContent>
@@ -76,8 +75,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-2">LinkedIn</h3>
-                  <a 
-                    href="https://linkedin.com"
+                  <a
+                    href="https://www.linkedin.com/in/muhammad-nabeel-3311458a/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-accent transition-colors"
@@ -94,29 +93,30 @@ const Contact = () => {
           <CardContent className="p-8 md:p-12 text-center">
             <h3 className="text-3xl font-bold mb-4">AIM DIGITAL UK LIMITED</h3>
             <p className="text-lg mb-8 opacity-90">
-              Let's build something amazing together. Whether you need a full-stack application, 
-              consulting, or technical leadership, I'm here to help turn your vision into reality.
+              Let's build something amazing together. Whether you need a
+              full-stack application, consulting, or technical leadership, I'm
+              here to help turn your vision into reality.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Button 
-                size="lg" 
-                variant="secondary"
-                asChild
-              >
-                <a href="mailto:contact@aimdigital.co.uk">
+              <Button size="lg" variant="secondary" asChild>
+                <a href="mailto:nabeelfarooq7000@gmail.com">
                   <Mail className="w-5 h-5 mr-2" />
                   Send Email
                 </a>
               </Button>
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 variant="outline"
                 className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary"
                 asChild
               >
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                  <Github className="w-5 h-5 mr-2" />
-                  GitHub Profile
+                <a
+                  href="https://www.linkedin.com/in/muhammad-nabeel-3311458a/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Linkedin className="w-5 h-5 mr-2" />
+                  LinkedIn Profile
                 </a>
               </Button>
             </div>

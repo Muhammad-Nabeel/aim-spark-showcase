@@ -8,7 +8,11 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Passionate about creating innovative digital solutions that make a difference
+            As a software developer with 7+ years of experience, I specialize in
+            creating innovative, scalable solutions that drive business success.
+            With expertise in multiple platforms and technologies, including web
+            development, mobile apps, and system integration, I am committed to
+            continuous learning and staying ahead of industry trends.
           </p>
         </div>
 
@@ -23,19 +27,61 @@ const About = () => {
                   <h3 className="text-2xl font-semibold mb-3">Experience</h3>
                   <div className="space-y-4">
                     <div>
-                      <h4 className="font-semibold text-lg">Founder & Lead Developer</h4>
-                      <p className="text-primary font-medium">AIM DIGITAL UK LIMITED</p>
-                      <p className="text-muted-foreground text-sm mt-1">2020 - Present</p>
+                      <h4 className="font-semibold text-lg">
+                        Technical Founder & MERN Stack Engineer
+                      </h4>
+                      <p className="text-primary font-medium">
+                        AIM DIGITAL UK LIMITED
+                      </p>
+                      <p className="text-muted-foreground text-sm mt-1">
+                        Dec 2024 - Present
+                      </p>
                       <p className="text-muted-foreground mt-2">
-                        Leading a team of developers to deliver cutting-edge web solutions. 
-                        Specializing in full-stack MERN applications with focus on scalability and performance.
+                        Lead architecture and development of e-commerce
+                        platforms using MERN stack with Nest.JS. Design and
+                        implement scalable Back-end APIs, integrate third-party
+                        services.
                       </p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-lg">Senior Full Stack Developer</h4>
-                      <p className="text-muted-foreground text-sm mt-1">2018 - 2020</p>
+                      <h4 className="font-semibold text-lg">
+                        MERN Stack Engineer
+                      </h4>
+                      <p className="text-primary font-medium">
+                        Travel Channel Int'l Pvt Ltd
+                      </p>
+                      <p className="text-muted-foreground text-sm mt-1">
+                        May 2023 - Nov 2024
+                      </p>
                       <p className="text-muted-foreground mt-2">
-                        Developed enterprise-level applications and mentored junior developers.
+                        Back-end integration with Amadeus Enterprise API,
+                        real-time booking flow, enhanced transaction process.
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-lg">
+                        Solutions Developer
+                      </h4>
+                      <p className="text-primary font-medium">FastSports.tv</p>
+                      <p className="text-muted-foreground text-sm mt-1">
+                        Jan 2022 - Apr 2023
+                      </p>
+                      <p className="text-muted-foreground mt-2">
+                        Developed .NET-based system for Vizrt graphics control,
+                        text replacement automation, command-based triggers.
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-lg">
+                        Senior DotNet Developer
+                      </h4>
+                      <p className="text-primary font-medium">Faremakers</p>
+                      <p className="text-muted-foreground text-sm mt-1">
+                        Aug 2017 - Dec 2021
+                      </p>
+                      <p className="text-muted-foreground mt-2">
+                        Developed Faremakers website with CRM integration,
+                        automated lead generation, WhatsApp integration.
                       </p>
                     </div>
                   </div>
@@ -48,33 +94,40 @@ const About = () => {
             <CardContent className="p-8">
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-accent/10 rounded-lg">
-                  <Award className="w-6 h-6 text-accent" />
+                  <GraduationCap className="w-6 h-6 text-accent" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-semibold mb-3">Expertise</h3>
+                  <h3 className="text-2xl font-semibold mb-3">Education</h3>
                   <div className="space-y-3">
                     <div>
-                      <h4 className="font-semibold">Full Stack Development</h4>
+                      <h4 className="font-semibold">
+                        Bachelor of Science in Computer Science
+                      </h4>
                       <p className="text-muted-foreground text-sm">
-                        Building end-to-end solutions with modern JavaScript frameworks
+                        University of Lahore
+                      </p>
+                      <p className="text-muted-foreground text-sm">
+                        2012 - 2016
                       </p>
                     </div>
                     <div>
-                      <h4 className="font-semibold">Cloud Architecture</h4>
+                      <h4 className="font-semibold">HSSC</h4>
                       <p className="text-muted-foreground text-sm">
-                        Designing scalable cloud infrastructure on AWS and Azure
+                        Govt Islamia College (Railway Road)
+                      </p>
+                      <p className="text-muted-foreground text-sm">
+                        2010 - 2012
                       </p>
                     </div>
                     <div>
-                      <h4 className="font-semibold">DevOps & CI/CD</h4>
+                      <h4 className="font-semibold">
+                        Secondary School Certificate
+                      </h4>
                       <p className="text-muted-foreground text-sm">
-                        Implementing automated deployment pipelines and monitoring
+                        Akbari Public School
                       </p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold">Team Leadership</h4>
                       <p className="text-muted-foreground text-sm">
-                        Managing cross-functional teams and delivering projects on time
+                        2008 - 2010
                       </p>
                     </div>
                   </div>
@@ -86,13 +139,27 @@ const About = () => {
 
         <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border-2">
           <CardContent className="p-8 md:p-12 text-center">
-            <h3 className="text-2xl font-semibold mb-4">My Approach</h3>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              I believe in writing clean, maintainable code that not only solves problems but also 
-              scales with your business. Every project is an opportunity to learn, innovate, and 
-              deliver exceptional user experiences. My focus is on understanding your needs and 
-              translating them into robust technical solutions that drive real business value.
-            </p>
+            <h3 className="text-2xl font-semibold mb-4">Skills & Expertise</h3>
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <div>
+                <h4 className="font-semibold mb-2">Frontend</h4>
+                <p className="text-sm text-muted-foreground">
+                  React JS, React Router, React Hooks, React DOM
+                </p>
+              </div>
+              <div>
+                <h4 className="font-semibold mb-2">Backend</h4>
+                <p className="text-sm text-muted-foreground">
+                  Node.js, Nest.JS, RESTful APIs, C# / .NET
+                </p>
+              </div>
+              <div>
+                <h4 className="font-semibold mb-2">Database & Tools</h4>
+                <p className="text-sm text-muted-foreground">
+                  SQL Server, Git, SQL
+                </p>
+              </div>
+            </div>
           </CardContent>
         </Card>
       </div>

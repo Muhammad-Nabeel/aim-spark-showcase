@@ -40,25 +40,28 @@ const Hero = () => {
 
           {/* Company */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Founder of <span className="font-semibold text-foreground">AIM DIGITAL UK LIMITED</span>
+            Co Founder {" "}
+            <span className="font-semibold text-foreground">
+              AIM DIGITAL UK LIMITED
+            </span>
           </p>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Building scalable web applications with MongoDB, Express.js, React, and Node.js. 
-            Transforming ideas into powerful digital solutions.
+            Building scalable web applications with MySQL, Express.js, React,
+            and Node.js. Transforming ideas into powerful digital solutions.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4 justify-center pt-4">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-opacity text-white shadow-lg"
               onClick={() => scrollToSection("projects")}
             >
               View My Work
             </Button>
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               variant="outline"
               onClick={() => scrollToSection("contact")}
             >
@@ -68,24 +71,24 @@ const Hero = () => {
 
           {/* Social Links */}
           <div className="flex gap-4 justify-center pt-8">
-            <a 
-              href="https://github.com" 
-              target="_blank" 
+            <a
+              href="https://github.com"
+              target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300 shadow-sm"
             >
               <Github className="w-5 h-5" />
             </a>
-            <a 
-              href="https://linkedin.com" 
-              target="_blank" 
+            <a
+              href="https://www.linkedin.com/in/muhammad-nabeel-3311458a/"
+              target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300 shadow-sm"
             >
               <Linkedin className="w-5 h-5" />
             </a>
-            <a 
-              href="mailto:contact@aimdigital.co.uk"
+            <a
+              href="mailto:nabeelfarooq7000@gmail.com"
               className="p-3 rounded-full bg-card border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300 shadow-sm"
             >
               <Mail className="w-5 h-5" />
@@ -94,7 +97,7 @@ const Hero = () => {
 
           {/* Scroll indicator */}
           <div className="pt-16">
-            <button 
+            <button
               onClick={() => scrollToSection("about")}
               className="animate-bounce text-muted-foreground hover:text-primary transition-colors"
             >
