@@ -1,110 +1,85 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { Download, Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { profile, highlights } from "@/data/profile";
+import photo from "@/assets/m-nabeel.png";
 
 const Hero = () => {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-background to-muted">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-pulse delay-700" />
-      </div>
+    <section
+      id="top"
+      className="relative overflow-hidden bg-gradient-to-br from-background via-background to-muted pt-32 pb-20 md:pt-40 md:pb-28"
+    >
+      <div className="pointer-events-none absolute -top-40 -right-40 h-96 w-96 rounded-full bg-primary/10 blur-3xl" />
 
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-card border border-border rounded-full text-sm font-medium shadow-sm">
+      <div className="container relative mx-auto max-w-6xl px-6">
+        <div className="flex flex-col-reverse gap-10 md:flex-row md:items-center md:justify-between">
+        <div className="max-w-3xl space-y-6">
+          <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-sm font-medium shadow-sm">
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
             </span>
-            Available for freelance projects
+            {profile.availability}
           </div>
 
-          {/* Name */}
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-2">
-            Muhammad Nabeel
-          </h1>
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">{profile.name}</h1>
 
-          {/* Title */}
-          <p className="text-2xl md:text-4xl font-semibold mb-4">
-            <span className="bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent">
-              MERN Stack Engineer
-            </span>
+          <p className="text-xl font-semibold text-primary md:text-2xl">{profile.title}</p>
+
+          <p className="text-lg leading-relaxed text-muted-foreground md:text-xl">
+            I build and lead production systems end to end: real-time flight booking, live-broadcast
+            graphics, GPS tracking and AI automation pipelines. TypeScript, Next.js, NestJS, Node.js,
+            .NET and Python.
           </p>
 
-          {/* Company */}
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Co Founder {" "}
-            <span className="font-semibold text-foreground">
-              AIM DIGITAL UK LIMITED
-            </span>
+          <p className="flex items-center gap-2 text-sm text-muted-foreground">
+            <MapPin className="h-4 w-4" />
+            Based in {profile.location} · Working with UK clients · Ready to relocate within the EU
           </p>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Building scalable web applications with MySQL, Express.js, React,
-            and Node.js. Transforming ideas into powerful digital solutions.
-          </p>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-wrap gap-4 justify-center pt-4">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-opacity text-white shadow-lg"
-              onClick={() => scrollToSection("projects")}
-            >
-              View My Work
+          <div className="flex flex-wrap gap-3 pt-2">
+            <Button size="lg" asChild>
+              <a href="#contact">
+                <Mail className="mr-2 h-4 w-4" />
+                Contact me
+              </a>
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              onClick={() => scrollToSection("contact")}
-            >
-              Get In Touch
+            <Button size="lg" variant="outline" asChild>
+              <a href={profile.cvUrl} download>
+                <Download className="mr-2 h-4 w-4" />
+                Download CV
+              </a>
             </Button>
-          </div>
-
-          {/* Social Links */}
-          <div className="flex gap-4 justify-center pt-8">
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-card border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300 shadow-sm"
-            >
-              <Github className="w-5 h-5" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/muhammad-nabeel-3311458a/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-card border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300 shadow-sm"
-            >
-              <Linkedin className="w-5 h-5" />
-            </a>
-            <a
-              href="mailto:nabeelfarooq7000@gmail.com"
-              className="p-3 rounded-full bg-card border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300 shadow-sm"
-            >
-              <Mail className="w-5 h-5" />
-            </a>
-          </div>
-
-          {/* Scroll indicator */}
-          <div className="pt-16">
-            <button
-              onClick={() => scrollToSection("about")}
-              className="animate-bounce text-muted-foreground hover:text-primary transition-colors"
-            >
-              <ArrowDown className="w-6 h-6 mx-auto" />
-            </button>
+            <Button size="lg" variant="ghost" asChild>
+              <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <Linkedin className="h-5 w-5" />
+              </a>
+            </Button>
+            <Button size="lg" variant="ghost" asChild>
+              <a href={profile.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <Github className="h-5 w-5" />
+              </a>
+            </Button>
           </div>
         </div>
+
+        <img
+          src={photo}
+          alt={`Portrait of ${profile.name}`}
+          width={250}
+          height={250}
+          className="h-32 w-32 shrink-0 rounded-full border-4 border-background object-cover shadow-xl ring-2 ring-primary/30 md:h-56 md:w-56"
+        />
+        </div>
+
+        <dl className="mt-16 grid grid-cols-2 gap-4 md:grid-cols-4">
+          {highlights.map((h) => (
+            <div key={h.label} className="flex flex-col rounded-xl border border-border bg-card p-5 shadow-sm">
+              <dt className="order-2 mt-1 text-sm text-muted-foreground">{h.label}</dt>
+              <dd className="font-heading text-2xl font-bold">{h.value}</dd>
+            </div>
+          ))}
+        </dl>
       </div>
     </section>
   );
